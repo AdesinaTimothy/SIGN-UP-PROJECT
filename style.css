@@ -1,0 +1,316 @@
+
+/* @import url(https://db.onlinewebfonts.com/c/42441faa9c7c255068f6dd0c33ca2ba5?family=SofiaPro-SemiBold);
+@import url(https://db.onlinewebfonts.com/c/dc6734899329fcbdd770b32dc47059d8?family=Sofia+Pro+Light);
+@import url(https://db.onlinewebfonts.com/c/4150d76a852e1c349e0b6fe15f29d9ca?family=Brown+Bold);
+@import url(https://db.onlinewebfonts.com/c/123c7e674188c97798dd39cd41ff2d85?family=Brown+Regular+Regular); */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary-color: #2EC4B6;
+    --label-color: #011C34;
+    --placeholder-color: #737373;
+    --background-color: #F7FDFC;
+    --label-szie: 14px;
+}
+
+body {
+    font-family: "Brown Bold", "SofiaPro-SemiBold";
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(--background-color);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 81px 140px;
+}
+
+.login-page .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* STYLING FOR THE LEFT LOGIN AREA */
+
+.login-page .container .login-left img {
+    max-width: 77.333px;
+}
+
+.login-page .container .login-left h1 {
+    font-size: 40px;
+    color: #000B0A;
+    line-height: 50px;
+    font-weight: 700px;
+    letter-spacing: -0.8px;
+    font-family: "Brown Bold";
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.login-page .container .login-left #pfirst {
+    font-size: 16px;
+    font-weight: 400px;
+    max-width: 460px;
+    line-height: 25px;
+    color: var(--placeholder-color);
+    font-family: "Regular";
+}
+
+.login-page .container .login-left #psecond {
+    display: none;
+    font-size: 16px;
+    font-weight: 400px;
+    max-width: 460px;
+    line-height: 25px;
+    color: var(--placeholder-color);
+    font-family: "Regular";
+}
+
+
+/* STYING FOR THE FORM AREA */
+.login-right form .name {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+}
+
+.login-right form label {
+    font-family: "SofiaPro-SemiBold";
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--label-color);
+}
+
+.login-right form .sex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-right form .w-h {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+}
+
+.login-right form .a-p input {
+    width: 100%
+}
+
+.login-right form #submit {
+    width: 100%;
+    background-color: var(--primary-color);
+    box-shadow: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 16px;
+    font-family: "SofiaPro-SemiBold";
+}
+
+#span {
+    color: var(--primary-color);
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+form {
+    background-color: white;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    width: 100%;
+    border-radius: 6px;
+    padding: 40px;
+}
+
+form input {
+    height: 48px;
+    width: 238px;
+    margin-bottom: 30px;
+    outline: 1px solid #F0F0F0;
+}
+
+form select {
+    height: 48px;
+    width: 238px;
+    margin-bottom: 30px;
+    outline: 1px solid #F0F0F0;
+}
+
+form .a-p select {
+    width: 100%;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-family: "Sofia Pro Light";
+    padding-left: 15px;
+}
+
+.login-right form select.activity-select {
+    font-size: 14px;
+    font-family: "Sofia Pro Light";
+    padding-left: 15px;
+}
+
+.login-right form select.gender-select {
+    font-size: 14px;
+    font-family: "Sofia Pro Light";
+    padding-left: 15px;
+}
+
+/* form select {
+    width: 100%;
+} */
+
+.login-right form p {
+    text-align: center;
+    letter-spacing: -0.7px;
+    font-family: "SofiaPro-SemiBold";
+    color: #111111;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    .login-page .container {
+        display: flex;
+    } 
+
+    .container {
+        padding: 81px 60px;
+    }
+
+    form {
+        padding: 24px 20px;
+    }
+}
+
+@media (max-width: 990px) {
+    .login-page .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 50px;
+    } 
+
+    .container {
+        padding: 81px 30px;
+    }
+
+    form {
+        padding: 24px 20px;
+    }
+}
+
+/* @media (max-width: 605px) {
+
+} */
+
+
+@media (max-width: 600px) {
+    .login-page .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 50px;
+    }
+
+    .login-page .container .login-left #pfirst {
+        display: none;
+    }
+    
+    .login-page .container .login-left #psecond {
+        display: block;
+        font-size: 16px;
+        font-weight: 400px;
+        line-height: 25px;
+        color: var(--placeholder-color);
+        font-family: 'arial';
+    }
+
+    .login-right form .name {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* column-gap: 15px; */
+    }
+
+    .container {
+        padding: 81px 20px;
+    }
+
+    form {
+        padding: 24px 16px;
+    }
+
+    .login-page .container .login-left img {
+        max-width: 38.67px;
+    }
+    
+    .login-page .container .login-left h1 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .login-page .container .login-left p {
+        font-size: 16px;
+    }
+
+    .login-right form .sex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .login-right form .w-h {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        column-gap: 15px;
+    }
+
+    form input {
+        height: 48px;
+        width:100%;
+        margin-bottom: 30px;
+        outline: 1px solid #F0F0F0;
+    }
+
+    form select {
+        width: 100%;
+    }
+
+    .login-right form p {
+        text-align: center;
+    }
+}
